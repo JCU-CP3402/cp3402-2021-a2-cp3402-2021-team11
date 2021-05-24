@@ -22,10 +22,18 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<div id="page" class="site px-15">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cmsassignmenttheme' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header py-3 bg-gray-300">
+		<div class="d-flex justify-content-between">
+			<div>Visit Us Daily from 8.00 AM to 6.00 PM</div>
+			<div class="d-flex">
+				<div>455 Wallstreet St., NY, USA</div>
+				<a>optima@yoursite.com</a>
+				<div>Request a Free Consultation</div>
+			</div>
+		</div>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
