@@ -140,11 +140,10 @@ add_action( 'widgets_init', 'cmsassignmenttheme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function cmsassignmenttheme_scripts() {
-	wp_enqueue_style( 'cmsassignmenttheme-style', get_stylesheet_uri(), array('cmsassignmenttheme-bootstrap'), _S_VERSION );
-	wp_enqueue_style( 'cmsassignmenttheme-bootstrap', get_template_directory_uri().'/css/bootstrap.min.css', array(), "5.0.1" );
+	wp_enqueue_style( 'cmsassignmenttheme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'cmsassignmenttheme-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'cmsassignmenttheme-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), "5.0.1", true );
+	wp_enqueue_script( 'cmsassignmenttheme-style-css', get_template_directory_uri() . '/dist/dev/style.css.js', array(), "5.0.1", true );
 	wp_enqueue_script( 'cmsassignmenttheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
