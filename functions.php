@@ -141,9 +141,10 @@ add_action( 'widgets_init', 'cmsassignmenttheme_widgets_init' );
  */
 function cmsassignmenttheme_scripts() {
 	wp_enqueue_style( 'cmsassignmenttheme-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'cmsassignmenttheme-style', 'rtl', 'replace' );
+	// wp_style_add_data( 'cmsassignmenttheme-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'cmsassignmenttheme-style-css', get_template_directory_uri() . '/dist/dev/style.css.js', array(), "5.0.1", true );
+	wp_enqueue_script( 'cmsassignmenttheme-app', get_template_directory_uri() . '/dist/dev/app.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'cmsassignmenttheme-customizer', get_template_directory_uri() . '/js/customizer.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'cmsassignmenttheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

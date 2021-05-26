@@ -1,0 +1,48 @@
+#searchId {
+    position: relative;
+    margin-right: 1rem;
+
+    .search-form {
+        display:flex;
+    
+        .search-submit {
+            cursor: pointer;
+            width: 2rem;
+            height: auto;
+            padding: 0;
+            background-color: inherit;
+            border: none;
+        };
+    }
+
+    .search-icon {
+        position: absolute;
+        width: 1rem;
+        top: 0.5rem;
+        right: 0.5rem;
+        z-index: -1;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #searchId {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #searchId {
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    #searchId {
+        margin-right: 7rem;
+    }
+}
+
