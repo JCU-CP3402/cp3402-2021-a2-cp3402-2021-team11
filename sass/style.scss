@@ -56,10 +56,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
-// Taildwindr
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+
 
 /* Normalize
 --------------------------------------------- */
@@ -68,6 +65,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Box sizing
 --------------------------------------------- */
 @import "generic/box-sizing";
+
+// Taildwindr
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /*--------------------------------------------------------------
 # Base
