@@ -1,14 +1,13 @@
 const path = require('path');
-const fs = require('fs')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano')
+const postcssImport = require('postcss-import')
 
-const devMode = process.env.NODE_ENV !== 'production';
+const devMode = process.env.NODE_ENV !== 'prod';
 
 module.exports = {
     watch: devMode,
-    mode: process.env.NODE_ENV,
     entry: './sass/style.scss',
 
     output: {
@@ -22,11 +21,10 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: !devMode,
                             modules: true,
                             importLoaders: 1,
                         },
@@ -46,11 +44,10 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: !devMode,
                             importLoaders: 2,
                         },
                     },
@@ -90,5 +87,5 @@ module.exports = {
     resolve: {
         modules: ['node_modules', 'src'],
         extensions: ['.js', '.json', '.css', '.scss'],
-    },
+    }
 };
