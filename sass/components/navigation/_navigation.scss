@@ -1,7 +1,6 @@
 .main-navigation {
-	display: block;
-	width: 100%;
-
+	display: grid;
+	place-content: center;
 	ul {
 		display: none;
 		list-style: none;
@@ -22,7 +21,6 @@
 			}
 
 			li {
-
 				&:hover > ul,
 				&.focus > ul {
 					display: block;
@@ -51,6 +49,7 @@
 
 	li {
 		position: relative;
+		margin-right: 2rem;
 
 		&:hover > a,
 		&.focus > a {
@@ -70,12 +69,45 @@
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+.menu-toggle {
+	cursor: pointer;
+	width: 2rem;
+	height: auto;
+	padding: 0;
+	background-color: inherit;
+	margin-left: 3rem;
+	border: none;
+
+	.menu-icon {
+		width: 1rem;
+	}
 }
 
-@media screen and (min-width: 37.5em) {
+.menu-toggle:focus {
+	outline: none;
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: grid;
+}
+
+.main-navigation.toggled ul {
+	position: absolute;
+	left:0;
+	top: 2.6rem;
+	width: 100%;
+	border-bottom: 1px #E5E7EB solid;
+	background-color: white;
+	padding: 0.5rem 3rem;
+	justify-items: start;
+
+	li {
+		margin: 0.5rem 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
 
 	.menu-toggle {
 		display: none;
@@ -83,6 +115,27 @@
 
 	.main-navigation ul {
 		display: flex;
+		margin-left: 5rem;
+	}
+	
+	.main-navigation.toggled ul {
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+		margin-left: 7rem;
+	}
+	
+	.main-navigation.toggled ul {
+		margin-left: 0;
 	}
 }
 
