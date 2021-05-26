@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano')
+const ProgressBarWebpackPlugin = require('progress-bar-webpack-plugin')
 const postcssImport = require('postcss-import')
 
 const devMode = process.env.NODE_ENV !== 'prod';
@@ -82,7 +83,8 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'style.css'
-        })
+        }),
+        new ProgressBarWebpackPlugin(),
     ],
     resolve: {
         modules: ['node_modules', 'src'],
