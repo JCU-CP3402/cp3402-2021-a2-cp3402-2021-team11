@@ -4,7 +4,6 @@ const postcssPresetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano')
 const ProgressBarWebpackPlugin = require('progress-bar-webpack-plugin')
 const postcssImport = require('postcss-import');
-const loader = require('sass-loader');
 
 const devMode = process.env.NODE_ENV !== 'prod';
 
@@ -16,7 +15,7 @@ module.exports = {
     ],
 
     output: {
-        filename: "dist/dev/app.js",
+        filename: "dist/app.js",
         path: path.resolve(__dirname),
     },
 
