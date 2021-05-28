@@ -59,7 +59,7 @@
 		</div><!-- .site-branding -->
 		
 		<div class="border-t border-b border-gray-200">
-			<div class="relative flex justify-between my-2 mx-0">
+			<div class="relative flex justify-between my-2">
 				<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cmsassignmenttheme' ); ?></button>
 					<?php
