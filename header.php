@@ -38,15 +38,15 @@
 		</div>
 		<div class="site-branding mx-12 lg:mx-20 md:28 py-5 flex">
 			<div class="w-20 h-20 mr-3"><?php the_custom_logo(); ?></div>
-			
+			<div class="grid place-content-center">
 				<?php
 				if ( is_front_page() && is_home() ) :
 					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title font-serif text-2xl m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php
 				else :
 					?>
-			<div class="grid place-content-center">
+			
 					<p class="site-title font-serif text-2xl m-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php
 				endif;
