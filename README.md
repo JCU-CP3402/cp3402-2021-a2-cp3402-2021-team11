@@ -38,17 +38,17 @@ A wordpress Theme inspired by the project to  call for actions to support Autism
     
  7.  find the file wp-config-sample.php and provide the database username, password and hostname to the codes
 
-    ```sh
-      /** MySQL database username */
-      define( 'DB_USER', 'root' );
+      ```sh
+        /** MySQL database username */
+        define( 'DB_USER', 'root' );
 
-      /** MySQL database password */
-      define( 'DB_PASSWORD', 'root' );
+        /** MySQL database password */
+        define( 'DB_PASSWORD', 'root' );
 
-      /** MySQL hostname */
-      define( 'DB_HOST', 'localhost' );
-      
-    ```
+        /** MySQL hostname */
+        define( 'DB_HOST', 'localhost' );
+
+      ```
     
  8. When done, save the codes and simply chang the name of the file to wp-config
 
