@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main mx-12 lg:mx-28 mt-10">
 
 		<section class="error-404 not-found">
 			<header class="page-header">

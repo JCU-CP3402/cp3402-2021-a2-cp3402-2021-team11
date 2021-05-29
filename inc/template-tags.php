@@ -126,7 +126,7 @@ if ( ! function_exists( 'cmsassignmenttheme_post_thumbnail' ) ) :
 
 		
 
-		if ( is_singular() ) :
+		if ( is_singular() && !is_front_page() ) :
 			if (! has_post_thumbnail()) :
 				?>
 				<div class="post-thumbnail">
