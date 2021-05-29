@@ -1,0 +1,49 @@
+.about__account-bar {
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    background-image: linear-gradient(to right, #3B82F6, #1E3A8A);
+    height: 0.3rem;
+    border-radius: 9999px;
+    z-index: 9999;
+    width: 100%;
+}
+
+.about__total-bar {
+    background-color: #E5E7EB;
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 9999px;
+}
+
+.about__account {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .about__title-progress {
+        margin: 1rem 0;
+    }
+}
+
+.about__psychology-progress {
+    .about__account{
+        width:90%;
+    }
+}
+
+.about__design-progress {
+    .about__account{
+        width:80%;
+    }
+}
+
+.about__marketing-progress {
+    .about__account{
+        width:70%;
+    }
+}
+
+.about__bg-opacity {
+    background: rgba($color: #000000, $alpha: 0.5);
+}
