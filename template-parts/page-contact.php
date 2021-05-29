@@ -1,6 +1,6 @@
 <?php
 /**
-  *  Template Name: Home page
+  *  Template Name: Contact page
 */
 get_header();
 ?>
@@ -12,7 +12,7 @@ get_header();
             <h1 class="font-sans text-5xl font-light text-gray-500 my-14"><?php the_title() ?></h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center mb-14">
-                <img class="w-11/12 shadow-2xl" src="<?php echo get_template_directory_uri() ?>/assets/img/about_us.jpg" alt="image" >
+                <img class="w-11/12 shadow-2xl" src="<?php echo get_template_directory_uri() ?>/assets/img/contact.png" alt="image" >
                 <div class="justify-self-stretch grid w-full ml-5 grid-flow-row auto-rows-max">
                     <div class="">
                         <?php the_content() ?>
@@ -61,5 +61,4 @@ get_header();
 ?>
 
 <?php
-get_sidebar();
 get_footer();

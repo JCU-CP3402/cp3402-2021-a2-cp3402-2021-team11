@@ -10,12 +10,23 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php
+		if ( is_singular() ) :?>
+			<div class="content__postthumbnail content__is-singular"><?php cmsassignmenttheme_post_thumbnail(); ?></div>
+		<?php else :?>
+			<div class="content__postthumbnail"><?php cmsassignmenttheme_post_thumbnail(); ?></div>
+		<?php
+		endif;
+	?>
+	
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title text-4xl text-gray-500 my-3">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title text-4xl text-gray-500 my-3">
+				<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>
+			</h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
@@ -28,8 +39,6 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php cmsassignmenttheme_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

@@ -1,0 +1,31 @@
+.content__postthumbnail {
+    margin-bottom: 1.25rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    .post-thumbnail {
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 20rem;
+        }
+    }
+}
+.content__postthumbnail.content__is-singular {
+    .post-thumbnail {
+        img {
+            height: 34rem;
+            @media (max-width: $xl) {
+                height: 30rem;
+            }
+            @media (max-width: $md) {
+                height: 25rem;
+            }
+            @media (max-width: $sm) {
+                height: 15rem;
+            }
+        }
+    }
+}
