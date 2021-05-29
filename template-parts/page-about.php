@@ -104,34 +104,34 @@ get_header();
                     >
                     <div class="absolute z-50 text-white bottom-0 right-0 w-full h-full grid rounded-lg
                                 place-content-center opacity-0 hover:opacity-100 about__bg-opacity duration-500">
-                        <div class="font-bold text-2xl text-center">Le Hoang Nguyen</div>
-                        <div class="text-center">Clinical Psyhologist</div>
+                        <div class="font-bold text-2xl text-center">Le Hoang</div>
+                        <div class="text-center">Product Owner</div>
                     </div>
                 </div>
 
                 <div class="relative overflow-hidden w-full h-96 mb-5">
                     <img
                         class="rounded-lg object-cover w-full h-full" 
-                        src="<?php echo get_template_directory_uri() ?>/assets/img/vanphuong.png" 
+                        src="<?php echo get_template_directory_uri() ?>/assets/img/minhquan.jpg" 
                         alt="img"
                     >
                     <div class="absolute z-50 text-white bottom-0 right-0 w-full h-full grid rounded-lg
                                 place-content-center opacity-0 hover:opacity-100 about__bg-opacity duration-500">
-                        <div class="font-bold text-2xl text-center">Van Phuong Nguyen</div>
-                        <div class="text-center">Clinical Psyhologist</div>
+                        <div class="font-bold text-2xl text-center">Minh Quan</div>
+                        <div class="text-center">Scrum Master</div>
                     </div>
                 </div>
 
                 <div class="relative overflow-hidden w-full h-96 mb-5">
                     <img 
                         class="rounded-lg object-cover w-full h-full" 
-                        src="<?php echo get_template_directory_uri() ?>/assets/img/khoa.jpg" 
+                        src="<?php echo get_template_directory_uri() ?>/assets/img/vanphuong.png" 
                         alt="img"
                     >
                     <div class="absolute z-50 text-white bottom-0 right-0 w-full h-full grid rounded-lg
                                 place-content-center opacity-0 hover:opacity-100 about__bg-opacity duration-500">
-                        <div class="font-bold text-2xl text-center">Khoa Nguyen</div>
-                        <div class="text-center">Clinical Psyhologist</div>
+                        <div class="font-bold text-2xl text-center">Van Phuong</div>
+                        <div class="text-center">Dev Team</div>
                     </div>
                 </div>
 
@@ -144,20 +144,20 @@ get_header();
                     <div class="absolute z-50 text-white bottom-0 right-0 w-full h-full grid rounded-lg
                                 place-content-center opacity-0 hover:opacity-100 about__bg-opacity duration-500">
                         <div class="font-bold text-2xl text-center">Khoa Nguyen</div>
-                        <div class="text-center">Clinical Psyhologist</div>
+                        <div class="text-center">Dev Team</div>
                     </div>
                 </div>
 
                 <div class="relative overflow-hidden w-full h-96 mb-5">
                     <img 
                         class="rounded-lg object-cover w-full h-full" 
-                        src="<?php echo get_template_directory_uri() ?>/assets/img/khoa.jpg"
+                        src="<?php echo get_template_directory_uri() ?>/assets/img/huybao.jpg" 
                         alt="img"
                     >
                     <div class="absolute z-50 text-white bottom-0 right-0 w-full h-full grid rounded-lg
                                 place-content-center opacity-0 hover:opacity-100 about__bg-opacity duration-500">
-                        <div class="font-bold text-2xl text-center">Khoa Nguyen</div>
-                        <div class="text-center">Clinical Psyhologist</div>
+                        <div class="font-bold text-2xl text-center">Huy Bao</div>
+                        <div class="text-center">Dev Team</div>
                     </div>
                 </div>
 
