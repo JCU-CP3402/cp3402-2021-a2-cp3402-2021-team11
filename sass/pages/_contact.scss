@@ -1,17 +1,17 @@
-div.elem-group {
+div.contact_elem-group {
   margin: 40px 0;
 }
 
-label {
+.contact_label {
   display: block;
   font-family: "Aleo";
   padding-bottom: 4px;
   font-size: 1.25em;
 }
 
-input,
-select,
-textarea {
+.contact_input,
+.contact_select,
+.contact_textarea {
   border-radius: 2px;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -21,11 +21,11 @@ textarea {
   padding: 8px;
 }
 
-textarea {
+.contact_textarea {
   height: 250px;
 }
 
-button {
+.contact_button {
   height: 50px;
   background: green;
   color: white;
@@ -36,6 +36,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.contact_button:hover {
   border: 2px solid black;
 }
