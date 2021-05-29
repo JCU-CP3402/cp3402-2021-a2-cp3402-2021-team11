@@ -1,0 +1,36 @@
+.site-footer {
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            display: block;
+            color: black;
+        }
+    }
+
+    .title {
+        color: $colour__footer-title;
+        font-size: 0.6rem;
+        font-weight: bold;
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .top-footer {
+        background-color: $color__footer-top;
+    }
+}
+
+.copyright-footer {
+    background-color: $color__footer-copyright;
+
+    .copyright {
+        margin: 0;
+    }
+}
