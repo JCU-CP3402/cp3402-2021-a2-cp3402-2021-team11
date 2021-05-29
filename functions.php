@@ -180,3 +180,73 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Footer Widget One
+ */
+
+function custom_footer_widget_one() {
+	$args = array(
+		'id' 				=> 'footer-widget-col-one',
+		'name'				=> __('Footer Column One', 'text_domain'),
+		'description'		=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    	=> '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_one');
+
+
+/**
+ * Footer Widget Two
+ */
+function custom_footer_widget_two() {
+	$args = array(
+		'id' 				=> 'footer-widget-col-two',
+		'name'				=> __('Footer Column Two', 'text_domain'),
+		'description'		=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    	=> '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_two');
+
+
+/**
+ * Footer Widget Three
+*/
+function custom_footer_widget_three() {
+	$args = array(
+		'id' 				=> 'footer-widget-col-three',
+		'name'				=> __('Footer Column Three', 'text_domain'),
+		'description'		=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    	=> '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_three');
+
+/**
+ * Footer Widget Four
+*/
+function custom_footer_widget_four() {
+	$args = array(
+		'id' 				=> 'footer-widget-col-four',
+		'name'				=> __('Footer Column Four', 'text_domain'),
+		'description'		=> __('Column One', 'text_domain'),
+		'before_title'		=> '<h3 class="title">',
+		'after_title' 		=> '</h3>',
+		'before_widget'		=> '<div id="%1$s" class="widget %2$s">',
+		'after_widget'    	=> '</div>'
+	);
+	register_sidebar( $args );
+}
+add_action( 'widgets_init', 'custom_footer_widget_four');
