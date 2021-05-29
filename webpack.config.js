@@ -4,10 +4,14 @@ const postcssPresetEnv = require('postcss-preset-env');
 const cssnano = require('cssnano')
 const ProgressBarWebpackPlugin = require('progress-bar-webpack-plugin')
 const postcssImport = require('postcss-import');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
+
+const smp = new SpeedMeasurePlugin()
 
 const devMode = process.env.NODE_ENV !== 'prod';
 
-module.exports = {
+module.exports = smp.wrap({
     watch: devMode,
     entry: [
         './sass/style.scss',
@@ -42,7 +46,6 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
                             importLoaders: 1,
                         },
                     },
@@ -117,10 +120,13 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'style.css'
         }),
-        new ProgressBarWebpackPlugin(),
+        new ProgressBarWebpackPlugin()
     ],
     resolve: {
         modules: ['node_modules', 'src'],
         extensions: ['.js', '.json', '.css', '.scss'],
-    }
-};
+    },
+    optimization: {
+        minimizer: [new UglifyJsPlugin({ cache: true, parallel: true })],
+    },
+});
