@@ -14,44 +14,38 @@
 
 get_header();
 ?>
+	
+	<div class="font-sans text-5xl font-light text-gray-500 my-14 mx-auto w-max"><?php single_post_title(); ?></div>
+	<div class="flex mx-12 lg:mx-28">
+		<main id="primary" class="site-main grid grid-cols-2 gap-5 mr-5">
+			<?php
+			if ( have_posts() ) :
 
-	<main id="primary" class="site-main">
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post();
 
-		<?php
-		if ( have_posts() ) :
+					/*
+					* Include the Post-Type-specific template for the content.
+					* If you want to override this in a child theme, then include a file
+					* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+					*/
+					get_template_part( 'template-parts/content', get_post_type() );
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
+				endwhile;
+
+				the_posts_navigation();
+
+			else :
+
+				get_template_part( 'template-parts/content', 'none' );
+
 			endif;
+			?>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+		</main><!-- #main -->
+		<div class="hidden md:block"><?php get_sidebar();?></div>
+	</div>
+	
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer();
