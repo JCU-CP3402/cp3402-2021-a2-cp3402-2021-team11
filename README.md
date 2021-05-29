@@ -80,7 +80,7 @@ A wordpress Theme inspired by the project to  call for actions to support Autism
  4. Customize the theme and create your own website!
 
 
-      ![Optima](https://user-images.githubusercontent.com/58071533/120078659-135e7a00-c0e3-11eb-9dd1-63189e3dd17e.JPG)
+       ![logo](https://user-images.githubusercontent.com/58071533/120080358-207f6700-c0eb-11eb-856e-d793155e7c6f.JPG)
  
  
 ## Contribute to our project!
