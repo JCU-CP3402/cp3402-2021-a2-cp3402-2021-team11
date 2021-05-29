@@ -44,5 +44,6 @@
 			<p class="copyright">&copy;<?php bloginfo( 'name' );?> <?php echo date("Y"); ?> / Created by <a href="https://github.com/JCU-CP3402/cp3402-2021-a2-cp3402-2021-team11" target="_blank">Team 11</p>
 		</div>
 	</footer>
+	<?php wp_footer() ?>
 </body>
 </html>
