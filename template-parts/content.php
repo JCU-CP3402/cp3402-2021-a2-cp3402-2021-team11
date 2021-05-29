@@ -10,12 +10,21 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php
+		if ( is_singular() ) :?>
+			<div class="content__postthumbnail content__is-singular"><?php cmsassignmenttheme_post_thumbnail(); ?></div>
+		<?php else :?>
+			<div class="content__postthumbnail"><?php cmsassignmenttheme_post_thumbnail(); ?></div>
+		<?php
+		endif;
+	?>
+	
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title text-4xl text-gray-500">', '</h1>' );
+			the_title( '<h1 class="entry-title text-4xl text-gray-500 my-3">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title text-4xl text-gray-500">
+			the_title( '<h2 class="entry-title text-4xl text-gray-500 my-3">
 				<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>
 			</h2>' );
 		endif;
@@ -30,8 +39,6 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<div class="w-full"><?php cmsassignmenttheme_post_thumbnail(); ?></div>
 
 	<div class="entry-content">
 		<?php

@@ -17,7 +17,7 @@ get_header();
 	
 	<div class="font-sans text-5xl font-light text-gray-500 my-14 mx-auto w-max"><?php single_post_title(); ?></div>
 	<div class="flex mx-12 lg:mx-28">
-		<main id="primary" class="site-main grid grid-cols-2 gap-5 mr-5">
+		<main id="primary" class="site-main grid grid-cols-1 lg:grid-cols-2 gap-10">
 			<?php
 			if ( have_posts() ) :
 
@@ -44,7 +44,7 @@ get_header();
 			?>
 
 		</main><!-- #main -->
-		<div class="hidden md:block"><?php get_sidebar();?></div>
+		<div class="hidden md:block ml-10"><?php get_sidebar();?></div>
 	</div>
 	
 
