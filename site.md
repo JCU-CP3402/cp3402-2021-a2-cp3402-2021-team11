@@ -26,4 +26,6 @@
   
   When you Inittate our theme for the first time, remember to run Yarn Install on your terminal to install some necessary packages and dependencies
   
+  Our theme can also be customized with TailwindCSS. Tailwind is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. It is super easy to use and you can Rapidly build modern websites without ever leaving your HTML.
+  
   
