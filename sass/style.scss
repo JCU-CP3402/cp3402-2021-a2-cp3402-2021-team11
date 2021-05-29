@@ -57,7 +57,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Generic
 --------------------------------------------------------------*/
 
-
 /* Normalize
 --------------------------------------------- */
 @import "generic/normalize";
@@ -67,9 +66,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "generic/box-sizing";
 
 /* Taildwindr*/
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /*--------------------------------------------------------------
 # Base
@@ -110,4 +109,5 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*
 # Pages
 */
-@import "pages/about-us"
+@import "pages/about-us";
+@import "pages/contact";
