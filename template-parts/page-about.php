@@ -97,7 +97,7 @@ get_header();
             </div>
             <div class="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5">
                 <div class="relative overflow-hidden w-full h-96 mb-5">
-                    <img 
+                    <img
                         class="rounded-lg object-cover w-full h-full" 
                         src="<?php echo get_template_directory_uri() ?>/assets/img/profile.jpg" 
                         alt="img"
@@ -110,7 +110,7 @@ get_header();
                 </div>
 
                 <div class="relative overflow-hidden w-full h-96 mb-5">
-                    <img 
+                    <img
                         class="rounded-lg object-cover w-full h-full" 
                         src="<?php echo get_template_directory_uri() ?>/assets/img/minhquan.jpg" 
                         alt="img"
@@ -137,8 +137,8 @@ get_header();
 
                 <div class="relative overflow-hidden w-full h-96 mb-5">
                     <img 
-                        class="rounded-lg object-cover w-full h-full" 
-                        src="<?php echo get_template_directory_uri() ?>/assets/img/khoa.jpg" 
+                        class="rounded-lg object-cover w-full h-full"
+                        src="<?php echo get_template_directory_uri() ?>/assets/img/khoa.jpg"
                         alt="img"
                     >
                     <div class="absolute z-50 text-white bottom-0 right-0 w-full h-full grid rounded-lg
@@ -160,10 +160,10 @@ get_header();
                         <div class="text-center">Dev Team</div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-            
+
         <?php endwhile;
     endif;
 ?>
