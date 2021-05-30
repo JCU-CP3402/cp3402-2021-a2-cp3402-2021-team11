@@ -133,6 +133,8 @@ function cmsassignmenttheme_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	require get_template_directory() . '/inc/custom-sidebar.php';
 }
 add_action( 'widgets_init', 'cmsassignmenttheme_widgets_init' );
 
@@ -172,6 +174,7 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
 
 /**
  * Load Jetpack compatibility file.
@@ -257,3 +260,6 @@ function is_post_type($type){
         return true;
     return false;
 }
+
+
+require get_template_directory() . '/inc/custom-widgets.php';
