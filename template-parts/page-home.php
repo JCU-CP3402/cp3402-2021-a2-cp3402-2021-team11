@@ -86,7 +86,7 @@ get_header();
 
     <div class="grid justify-items-center mb-10">
       <img class="w-10 h-10 sm:w-20 sm:h-20" src="<?php echo get_template_directory_uri() ?>/assets/icon/medical.png" alt="icon">
-      <div class="text-2xl sm:text-5xl my-2 font-bold"><?php dynamic_sidebar( 'home-experience-num-3' ); ?></div>
+      <div class="text-2xl sm:text-5xl my-2 font-bold"><?php dynamic_sidebar( 'home-experience-number-3' ); ?></div>
       <div class="text-center"><?php dynamic_sidebar( 'home-experience-text-3' ); ?></div>
     </div>
 
@@ -109,7 +109,7 @@ get_header();
 
 
           if ( $lastBlog->have_posts() ):
-              while ( $lastBlog->have_posts() ):$lastBlog->the_post();?>
+              while ( $lastBlog->have_posts() ):$lastBlog->the_post('more', true);?>
                   <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
               <?php endwhile;
           endif;
