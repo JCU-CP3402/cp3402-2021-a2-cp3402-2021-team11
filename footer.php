@@ -17,7 +17,7 @@
 				<div class="grid md:grid-cols-4 md:gap-16 items-center md:justify-items-center md:pb-4">
 					<div class="footer-brand">
 						<div class="flex items-center">
-							<img class="object-cover" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" loading="lazy" alt="..">
+							<?php the_custom_logo(); ?>
 							<span><?php bloginfo( 'name' );?></span>
 						</div>
 						<?php dynamic_sidebar( 'footer-widget-col-one' ); ?>	

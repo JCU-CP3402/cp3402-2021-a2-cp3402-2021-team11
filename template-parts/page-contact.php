@@ -9,7 +9,7 @@ get_header();
 <?php
 // define variables and set to empty values
     $visitor_name = "";
-    $visitor_suffix= ""
+    $visitor_suffix= "";
     $visitor_email = "";
     $visitor_occupation = "";
     $visitor_dob = "";
@@ -17,7 +17,7 @@ get_header();
     $visitor_address = "";
     $visitor_city= "";
     $visitor_state = "";
-    $visitor_postal = ""
+    $visitor_postal = "";
     $visitor_country = "";
     $visitor_phone= "";
     $visitor_asd ="";
@@ -86,7 +86,7 @@ function test_input($data) {
                             </div>
                             <div class="contact_elem-group">
                                 <label class="contact_label" for="suffix">Suffix</label>
-                                <input class="contact_input" type="text" id="suffix" name="visitor_suffix" placeholder="Mr. Mrs Ms" pattern=[A-Z\sa-z]{3,20} required>
+                                <input class="contact_input" type="text" id="suffix" name="visitor_suffix" placeholder="Mr. Mrs Ms" required>
                             </div>
                             <div class="contact_elem-group">
                                 <label class="contact_label" for="email">Your E-mail</label>
@@ -98,7 +98,7 @@ function test_input($data) {
                             </div>
                             <div class="contact_elem-group">
                                 <label class="contact_label" for="dob">Date of Birth</label>
-                                <input class="contact_input" type="number" id="dob" name="visitor_dob"  required>
+                                <input class="contact_input" type="date" id="dob" name="visitor_dob"  required>
                             </div>
                             <div class="contact_elem-group">
                                 <label for="gender_selection">Your gender</label>
