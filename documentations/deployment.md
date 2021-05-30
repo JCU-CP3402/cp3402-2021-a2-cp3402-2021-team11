@@ -1,3 +1,4 @@
 # Deployment Documentation
 
- ##TODO
+For the deployment. All of us have to set up a new local environment for Wordpress. After that, we use Github for version control and all of us work together via GitHub on the theme. We made the content inside our local environment first, after that we do backup and send the backup file to all members so they can restore it on their local environment and continue to work on. If we want to push it to the staging site, we simply do backup and restore it to the staging site. We use AWS EC2 for both staging and production site. If we all agree that there is no issue on the staging site, we will push it to the production site. Our workflow is simple, we make the content on our local environment and backup it then send it to all members. For the theme, we use Github to pull and push the code so everyone can clone it easily and put the theme inside the Wordpress folder. For the staging and production we are using backup and restore feature to push our content to the sites.
+
