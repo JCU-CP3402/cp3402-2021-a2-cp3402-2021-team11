@@ -10,6 +10,11 @@
     @media (max-width:$sm) {
         height: 34rem;
     }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .home__post {
@@ -59,5 +64,27 @@
             font-size: medium;
             color: #9CA3AF;
         }
+    }
+}
+
+.home__bg-1 {
+    height:26rem;
+    img {
+        width: 100%;
+        height:26rem;
+        object-fit: cover;
+    }
+}
+
+.home__image-1 {
+    height:24rem;
+    img{
+        width: 100%;
+        height:24rem;
+        object-fit: cover;
+    }
+    
+    @media (max-width:$lg) {
+        height: 20rem;
     }
 }
